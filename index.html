@@ -124,7 +124,11 @@ p.ex1 {
   <h3 id="Introduction">Introduction</h3>.
 <p class="ex1">
 <pre>
-Cars have changed since Karl Benz created the first in 1886 (Longdon, 2024, History of Cars Timeline: The Evolution of the Automobile). Since then, they have continued to evolve to the point where Tesla Roadster may bring us closer to flying cars (Car and Driver, 2026, 2029 Tesla Roadster). When we think of cars, we often think of speed; fast cars are massively entertaining, proven by movie franchises (e.g. Fast and Furious) and motorsports competition such as Formula 1. Formula 1 cars may be getting slower (Lathia, 2026, F1 Cars Are 3% Slower in 2026. Last Time It Took Three Years to Recover), but interest has increased (Formula 1, 2026, Formula 1 2026 Season half year review) and the speeds of up to 378 kmph (Red Bull, 2026, How fast can F1 cars go?) are part of the reason why. But how do they achieve such high speeds? 
+Cars have changed since Karl Benz created the first in 1886 (Longdon, 2024, History of Cars Timeline: The Evolution of the Automobile). 
+Since then, they have continued to evolve to the point where Tesla Roadster may bring us closer to flying cars (Car and Driver, 2026, 2029 Tesla Roadster). 
+When we think of cars, we often think of speed; fast cars are massively entertaining, proven by movie franchises (e.g. Fast and Furious) and motorsports competition such as Formula 1. 
+Formula 1 cars may be getting slower (Lathia, 2026, F1 Cars Are 3% Slower in 2026. Last Time It Took Three Years to Recover), but interest has increased (Formula 1, 2026, Formula 1 2026 Season half year review) and the speeds of up to 378 kmph (Red Bull, 2026, How fast can F1 cars go?) are part of the reason why.
+But how do they achieve such high speeds? 
 </p>
 
   <hr> 
@@ -185,15 +189,14 @@ Consequently, the need to bring the power unit up to a comparable competitive le
           <mrow>
           <msup><mi>x</mi><mn>2</mn></msup>
                 <mo>+</mo><mi>4</mi><mo>&InvisibleTimes;</mo><mi>x</mi><mo>+</mo> <mi>4</mi>
+          </mrow>
           <mo>=</mo>
           <mi>0</mi>
 
 </body>
 </html>
+   <head>
 <body style="background-color:#FFFFFF;margin-left:50px;">
-
-<a href=”url”>https://www.manutd.com/en</a>
-  
   </head>    
 </html>
 
@@ -217,56 +220,6 @@ button.style.backgroundColor = randomColor;
 // Add a click event listener to the button
 button.addEventListener("click", changeColor);
 </script>
-<!-- //////////////////////////////////////////////////////////////////////////////// -->
-<!-- ////////////////////////////// Adding last update ////////////////////////////// -->
-<!-- //////////////////////////////////////////////////////////////////////////////// -->
-    <!-- Last commit time display -->
-<div id="last-updated">Loading last update time...</div>
-<!-- Verify Button -->
-<button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
-    Verify Last Modified Time
-</button>
-<script>
-    async function getLastUpdatedTime() {
-        const username = 'FEPSFY6960038';
-        const repo = 'FY6960038';
-       
-        const url = `https://api.github.com/repos/${username}/${repo}/commits`;
-        try {
-            const response = await fetch(url, {
-                method: 'GET',
-                headers: {
-                    'Accept': 'application/vnd.github.v3+json',
-                }
-            });
-            if (!response.ok) {
-                throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
-            }
-            const commits = await response.json();
-            if (commits && commits.length > 0) {
-                const lastCommitDate = new Date(commits[0].commit.committer.date);
-               
-                // Displaying the time on load
-                document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
-            } else {
-                document.getElementById('last-updated').innerText = 'No commits found in the repository.';
-            }
-        } catch (error) {
-            console.error('Error fetching the last updated time:', error);
-            document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
-        }
-    }
-    // Function to verify the last update time by re-fetching it from the API
-    async function verifyLastUpdatedTime() {
-        document.getElementById('last-updated').innerText = 'Verifying...';
-        await getLastUpdatedTime();
-        alert("Last modified time has been successfully verified from GitHub API.");
-    }
-    // Initial load to display the time on page load
-    window.onload = getLastUpdatedTime;
-</script>
-</body>
-</html>
 
 <!DOCTYPE>
 <head>
