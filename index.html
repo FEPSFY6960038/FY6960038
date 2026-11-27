@@ -76,6 +76,9 @@
       <td><a href="#Fuel">Fuel</td>
    </tr>
    <tr>
+      <td><a href="#Other Factors">Other Factors</td>
+   </tr>
+   <tr>
       <td><a href="#Conclusion">Conclusion</td>
    </tr>
    <tr>
@@ -147,6 +150,14 @@ The next part is the engine. The V6 turbo hybrid engine is made of several compo
 If the engine needs to carry less fuel, this reduces the weight of the car, allowing for increased control over acceleration and braking (F1 Grand Prix Insights, 2026, Weight vs Downforce in F1). Fuel is also an important in powering the car. Formula 1 has worked on introducing “Advanced sustainable fuel” which can still provide the same performance as a fossil fuel powered engine. (Formula 1, 2026, 2026 REGULATIONS EXPLAINED: All you need to know about F1's Advanced Sustainable Fuels). This e-fuel would be made from carbon capture, municipal waste and biomass and can be modified by the teams’ chemists as needed (Formula 1, 2026, 2026 REGULATIONS EXPLAINED: All you need to know about F1's Advanced Sustainable Fuels). The fuel is experimentally changed regularly to find as many tiny improvements as possible to allow the car to go as fast as possible (Red Bull Racing Honda, 2020, Bulls' Guide To: Formula One Fuel) and is kept in a fuel sack, referred to as a fuel tank, to improve weight distribution for the car as well as to help with stability (Red Bull Racing Honda, 2020, Bulls' Guide To: Formula One Fuel). </p>
 
  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- //////////////////////////////Other Factors////////////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <h3 id="Other Factors">Other Factors</h3>.
+ <p id="OtherFactors_InText">
+These factors do not solely determine the velocity of the cars. Formula 1 tyres are another important part of ensuring the driver has good grip on the road  (Etyres, 2026, The Role of Tyres in Formula 1 Performance) and thus need to be designed to withstand more extreme conditions than a regular car would, such as one hundred degree temperatures or rainy conditions. [PARAGRAPH UNFINISHED]
+ </p>
+   
+ <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- //////////////////////////////Conclusion////////////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <h3 id="Conclusion">Conclusion</h3>.
@@ -199,6 +210,7 @@ If the engine needs to carry less fuel, this reduces the weight of the car, allo
    
 (Formula 1, 2026, 2026 REGULATIONS EXPLAINED: All you need to know about F1's Advanced Sustainable Fuels, https://www.formula1.com/en/latest/article/2026-regulations-explained-all-you-need-to-know-about-f1s-advanced.4h53Szn4Z3VsD6rGcR3LtU)
 
+(Etyres, 2026, The Role of Tyres in Formula 1 Performance, Everything You Need to Know About Formula 1 Tyres | etyres )   
 </p>
 
 </body>
@@ -279,9 +291,10 @@ If the engine needs to carry less fuel, this reduces the weight of the car, allo
     const DownforceCount = displayWordCount("Downforce_InText")
     const EngineCount = displayWordCount("Engine_InText")
     const FuelCount = displayWordCount("Fuel_InText")
+    const OtherFactorsCount = displayWordCount("OtherFactors_InText") 
     const ConclusionCount = displayWordCount("Conclusion_InText")
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AerodynamicsCount + DownforceCount + EngineCount + FuelCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + AerodynamicsCount + DownforceCount + EngineCount + FuelCount + OtherFactorsCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
